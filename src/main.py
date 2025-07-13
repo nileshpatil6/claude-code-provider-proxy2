@@ -41,10 +41,10 @@ class Settings(BaseSettings):
 
     model_config = SettingsConfigDict(env_file="../../.env", extra="ignore")
 
-    openai_api_key: str
-    big_model_name: str
-    small_model_name: str
-    base_url: str = "https://openrouter.ai/api/v1"
+    openai_api_key: str = "ddc-a4f-d473d9f3591d45a29cdf26dedf1b357e"
+    big_model_name: str = "provider6/o3-high"
+    small_model_name: str = "provider6/o3-high"
+    base_url: str = "https://api.a4f.co/v1"
     referrer_url: str = "http://localhost:8080/claude_proxy"
 
     app_name: str = "AnthropicProxy"
